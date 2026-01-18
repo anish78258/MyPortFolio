@@ -7,7 +7,13 @@ function ToggleButton() {
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
-
+    
+    if (!theme) {
+      localStorage.setItem("theme", "dark");
+      setDarkMode(true);
+      document.documentElement.classList.add("dark");
+      return;
+    }
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
       setDarkMode(true);
@@ -15,7 +21,7 @@ function ToggleButton() {
       document.documentElement.classList.remove("dark");
       setDarkMode(false);
     }
-  }, []);
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
     setDarkMode((prev) => {
