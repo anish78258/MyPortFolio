@@ -3,7 +3,7 @@ import { Sun, Moon } from "lucide-react";
 import { cn } from "../lib/utils.jsx";
 
 function ToggleButton() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
