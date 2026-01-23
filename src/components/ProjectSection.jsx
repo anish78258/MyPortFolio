@@ -7,7 +7,7 @@ const projects = [
     title: "Lead-to-Delivery Funnel Analytics (ElectricPe)",
     description:
       "Built an interactive Excel analytics system to analyze the Lead → Pre-Booking → Booking → Delivery funnel across multiple stores, identifying conversion drop-offs and TAT delays. Delivered actionable insights for workflow optimization.",
-    image: "/projects/electricpe.png",
+    image: "src\\assets\\image.png",
     tags: ["Excel", "Power Query", "Pivot Tables", "Data Visualization"],
     demoUrl: "https://github.com/anish78258/Electric_pe_lead_funnel_analysis",
     githubUrl: "https://github.com/anish78258/Electric_pe_lead_funnel_analysis",
